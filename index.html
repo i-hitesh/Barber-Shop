@@ -25,6 +25,40 @@
             </div>
         </div>
     </section>
+
+    <div id="side_nav">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="menu_btn">
+        <img src="res/menu.png" alt="menu" id="menu">
+    </div>
+
+    <script>
+        var menu_btn = document.getElementById("menu_btn")
+        var side_nav = document.getElementById("side_nav")
+        var menu = document.getElementById("menu")
+
+        side_nav.style.right = "-250px";
+        menu_btn.onclick = function(){
+            if (side_nav.style.right == "-250px") {
+                side_nav.style.right = "0";     
+                menu.src = "res/close.png";          
+            }
+            else{
+                side_nav.style.right = "-250px";
+                menu.src = "res/menu.png";
+            }
+        }
+    </script>
 </body>
 
 </html>

@@ -68,3 +68,42 @@
 .banner-btn a:hover{
     color: black;
 }
+
+#side_nav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #009688;
+    z-index: 2;
+    transition: .5s;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+#menu_btn{
+    height: 50px;
+    width: 50px;
+    background-color: #009688;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menu_btn img{
+    width: 20px;
+    margin-top: 15px;
+}
